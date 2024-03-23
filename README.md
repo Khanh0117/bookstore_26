@@ -24,7 +24,7 @@ localhost/web2_26/admin/dashboard.php
 tk: admin 
 mk: 123
 
-Phương pháp khác để khởi chạy server là dùng php Server
+Phương pháp khác để khởi chạy project là dùng php Server
 Bằng cách thực hiện theo video như sau:
 https://youtu.be/Ry8tRRfxxf4?si=FOuF_zRunoUJYcyf
 
