@@ -4,7 +4,7 @@ session_start();
 
 $cus_id = '';
 
-if(isset($_SESSION['customer'])){
+if (isset($_SESSION['customer'])) {
 	$cus_id = $_SESSION['customer'];
 }
 
@@ -209,15 +209,17 @@ if (isset($_POST['checkout_bank'])) {
 		$new_order = $row['max(Idhd)'];
 
 		foreach ($_SESSION["cart"] as $key => $val) {
-			$pro_id = $val['id'];
-			$price = $val['price'];
-			$qty = $val['quantity'];
+			if ($val['cusID'] == $cus_id) {
+				$pro_id = $val['id'];
+				$price = $val['price'];
+				$qty = $val['quantity'];
 
-			$subtotal = $price * $qty;
+				$subtotal = $price * $qty;
 
-			$query_cthd = "INSERT INTO chitiethoadon(Idhd, Idsp, Soluong, Tongtien) VALUES ('$new_order','$pro_id','$qty','$subtotal')";
-			$run_cthd = $conn->query($query_cthd);
-			unset($_SESSION['cart'][$key]);
+				$query_cthd = "INSERT INTO chitiethoadon(Idhd, Idsp, Soluong, Tongtien) VALUES ('$new_order','$pro_id','$qty','$subtotal')";
+				$run_cthd = $conn->query($query_cthd);
+				unset($_SESSION['cart'][$key]);
+			}
 		}
 
 		echo "Đặt hàng thành công";
@@ -241,15 +243,17 @@ if (isset($_POST['checkout_bank'])) {
 		$new_order = $row['max(Idhd)'];
 
 		foreach ($_SESSION["cart"] as $key => $val) {
-			$pro_id = $val['id'];
-			$price = $val['price'];
-			$qty = $val['quantity'];
+			if ($val['cusID'] == $cus_id) {
+				$pro_id = $val['id'];
+				$price = $val['price'];
+				$qty = $val['quantity'];
 
-			$subtotal = $price * $qty;
+				$subtotal = $price * $qty;
 
-			$query_cthd = "INSERT INTO chitiethoadon(Idhd, Idsp, Soluong, Tongtien) VALUES ('$new_order','$pro_id','$qty','$subtotal')";
-			$run_cthd = $conn->query($query_cthd);
-			unset($_SESSION['cart'][$key]);
+				$query_cthd = "INSERT INTO chitiethoadon(Idhd, Idsp, Soluong, Tongtien) VALUES ('$new_order','$pro_id','$qty','$subtotal')";
+				$run_cthd = $conn->query($query_cthd);
+				unset($_SESSION['cart'][$key]);
+			}
 		}
 		echo "Đặt hàng thành công";
 	}
