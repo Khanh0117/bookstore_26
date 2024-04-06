@@ -9,14 +9,14 @@
                                     <i class="fa fa-envelope"></i>
                                 </div>
                                 <div class="newsletter__content">
-                                    <h3>sign up for newsletter</h3>
-                                    <p>Duis autem vel eum iriureDuis autem vel eum</p>
+                                    <h3>Đăng ký nhận bản tin</h3>
+                                    <p>Nhập địa chỉ email của bạn</p>
                                 </div>
                             </div>
                             <div class="newsletter__box">
                                 <form id="mc-form">
                                     <input type="email" id="mc-email" autocomplete="off" placeholder="Email">
-                                    <button id="mc-submit">subscribe!</button>
+                                    <button id="mc-submit">Đăng ký!</button>
                                 </form>
                             </div>
                             <!-- mailchimp-alerts Start -->
@@ -46,46 +46,30 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-26">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>contact us</h4>
+                                    <h4>Liên hệ</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul class="location">
-                                        <li><i class="fa fa-envelope"></i>support@galio.com</li>
-                                        <li><i class="fa fa-phone"></i>(800) 0123 456 789</li>
-                                        <li><i class="fa fa-map-marker"></i>Address:  1234 - Bandit Tringi Aliquam Vitae. New York</li>
+                                        <li><i class="fa fa-envelope"></i>support@gmail.com</li>
+                                        <li><i class="fa fa-phone"></i>0123 456 789</li>
+                                        <li><i class="fa fa-map-marker"></i>Địa chỉ: 1234 An Dương Vương, Phường 3, Quận 5, TP.HCM</li>
                                     </ul>
-                                    <a class="map-btn" href="contact-us.html">open in google map</a>
+                                    <a class="map-btn" href="#">Mở google map</a>
                                 </div>
                             </div> <!-- single widget end -->
                         </div> <!-- single widget column end -->
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-26">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>my account</h4>
+                                    <h4>Tài khoản của tôi</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">my account</a></li>
-                                        <li><a href="#">my cart</a></li>
-                                        <li><a href="#">checkout</a></li>
-                                        <li><a href="#">my wishlist</a></li>
-                                        <li><a href="#">login</a></li>
-                                    </ul>
-                                </div>
-                            </div> <!-- single widget end -->
-                        </div> <!-- single widget column end -->
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footer-widget mb-sm-26">
-                                <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>short code</h4>
-                                </div>
-                                <div class="widget-body">
-                                    <ul>
-                                        <li><a href="#">gallery</a></li>
-                                        <li><a href="#">accordion</a></li>
-                                        <li><a href="#">carousel</a></li>
-                                        <li><a href="#">map</a></li>
-                                        <li><a href="#">tab</a></li>
+                                        <li><a href="#">Đăng nhập/Đăng ký</a></li>
+                                        <li><a href="#">Chi tiết tài khoản</a></li>
+                                        <li><a href="#">Giỏ hàng</a></li>
+                                        <li><a href="#">Lịch sử mua hàng</a></li>
+                                        <li><a href="#">Thay đổi địa chỉ</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -93,15 +77,31 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-26">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>product tags</h4>
+                                    <h4>Hỗ trợ</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">computer</a></li>
-                                        <li><a href="#">camera</a></li>
-                                        <li><a href="#">smart phone</a></li>
-                                        <li><a href="#">watch</a></li>
-                                        <li><a href="#">tablet</a></li>
+                                        <li><a href="#">Chính sách đổi-trả-hoàn tiền</a></li>
+                                        <li><a href="#">Chính sách bảo hành</a></li>
+                                        <li><a href="#">Chính sách vận chuyển</a></li>
+                                        <li><a href="#">Chính sách khách sỉ</a></li>
+                                        <li><a href="#">Phương thức thanh toán và xuất HĐ</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single widget end -->
+                        </div> <!-- single widget column end -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget mb-sm-26">
+                                <div class="widget-title mb-10 mb-sm-6">
+                                    <h4>Dịch vụ</h4>
+                                </div>
+                                <div class="widget-body">
+                                    <ul>
+                                        <li><a href="#">Điều khoản sử dụng</a></li>
+                                        <li><a href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+                                        <li><a href="#">Chính sách bảo mật thanh toán</a></li>
+                                        <li><a href="#">Giới thiệu nhà sách</a></li>
+                                        <li><a href="#">Hệ thống trung tâm - nhà sách</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
