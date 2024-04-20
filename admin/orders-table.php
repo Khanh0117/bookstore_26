@@ -71,12 +71,12 @@ $total_pages = ceil($num_row_page / $limit);
                             <?php
                             if ($hd_status == '1') {
                             ?>
-                                <button type="button" class="btn btn-info">Chuẩn bị hàng</button>
+                                <button type="button" class="btn btn-info">Chưa xác nhận</button>
                             <?php
                             }
                             if ($hd_status == '2') {
                             ?>
-                                <button type="button" class="btn btn-danger">Đang giao</button>
+                                <button type="button" class="btn btn-danger">Đã xác nhận</button>
                             <?php
                             }
                             if ($hd_status == '3') {

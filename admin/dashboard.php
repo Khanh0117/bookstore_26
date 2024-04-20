@@ -184,6 +184,7 @@
                 $run = $conn->query($query);
                 if (mysqli_num_rows($run) > 0) {
                     while ($row = $run->fetch_array()) {
+                        $hd_name = $row['Ten'];
                         $hd_id = $row['Idhd'];
                         $email = $row['Mail'];
                         $phonenumber = $row['Sdt'];
@@ -198,22 +199,6 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <h6 style="color:#ea5774;font-weight:500;">Mã đơn hàng:</h6>
-                                                <p> <?php echo $hd_id ?></p>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h6 style="color:#ea5774;font-weight:500;">Email:</h6>
-                                                <p> <?php echo $email ?></p>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h6 style="color:#ea5774;font-weight:500;">Số điện thoại:</h6>
-                                                <p> <?php echo $phonenumber ?></p>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <h6 style="color:#ea5774;font-weight:500;">Ghi chú:</h6>
-                                                <p> <?php echo nl2br($ghichu) ?></p>
-                                            </div>
                                             <div class="table-responsive">
                                                 <table id="table-detail-<?php echo $hd_id ?>" class="table table-bordered table-striped table-hover">
                                                     <tr>
@@ -250,28 +235,27 @@
                                                         }
                                                     }
                                                     ?>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th style="color: #ea5774;">Tính tạm:</th>
-                                                        <th style="color: #ea5774;">$ <?php echo $total_price ?></th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th style="color: #ea5774;">Phí ship:</th>
-                                                        <th style="color: #ea5774;">$ 5</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th></th>
-                                                        <th style="color: #ea5774;">Tổng:</th>
-                                                        <th style="color: #ea5774;">$ <?php echo $total_price + 5 ?></th>
-                                                    </tr>
                                                 </table>
+                                                
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 style="color:#ea5774;font-weight:500;">Đơn hàng: <?php echo $hd_id ?></h6>
+                                                <h6><?php echo $hd_name ?></h6>
+                                                <?php echo $phonenumber ?> <br>
+                                                <?php echo $email ?>
+                                                <?php echo nl2br($ghichu) ?>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h6 style="font-weight:300;" >Tính tạm:</h6>
+                                                <h6 style="font-weight:300;" >Phí Ship:</h6>
+                                                <br>
+                                                <h5 style="font-weight:500;" >Thành tiền:</h5>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h6 style="font-weight:300;" >$<?php echo $total_price ?></h6>
+                                                <h6 style="font-weight:300;" >$5</h6>
+                                                <br>
+                                                <h5 style="font-weight:500;" >$<?php echo $total_price + 5 ?></h5>
                                             </div>
                                         </div>
                                     </div>
