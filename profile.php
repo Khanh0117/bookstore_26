@@ -115,17 +115,17 @@ if (!isset($_SESSION['customer'])) {
                                                                             <?php
                                                                             if ($hd_status == '1') {
                                                                             ?>
-                                                                                <span class="btn btn-info">Chuẩn bị hàng</span>
+                                                                                <span class="btn btn-info">Chưa xác nhận</span>
                                                                             <?php
                                                                             }
                                                                             if ($hd_status == '2') {
                                                                             ?>
-                                                                                <span class="btn btn-danger">Đang giao</span>
+                                                                                <span class="btn btn-danger">Đã xác nhận</span>
                                                                             <?php
                                                                             }
                                                                             if ($hd_status == '3') {
                                                                             ?>
-                                                                                <span class="btn btn-success">Đã giao</span>
+                                                                                <span class="btn btn-success">Đã nhận hàng</span>
                                                                             <?php
                                                                             }
                                                                             ?>
@@ -146,6 +146,7 @@ if (!isset($_SESSION['customer'])) {
                                                 $run = $conn->query($query);
                                                 if ($run->num_rows > 0) {
                                                     while ($row = $run->fetch_array()) {
+                                                        $hd_name = $row['Ten'];
                                                         $hd_id = $row['Idhd'];
                                                         $email = $row['Mail'];
                                                         $phonenumber = $row['Sdt'];
@@ -160,22 +161,6 @@ if (!isset($_SESSION['customer'])) {
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <h6 style="color:#ea5774;font-weight:500;">Mã đơn hàng:</h6>
-                                                                                <p> <?php echo $hd_id ?></p>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <h6 style="color:#ea5774;font-weight:500;">Email:</h6>
-                                                                                <p> <?php echo $email ?></p>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <h6 style="color:#ea5774;font-weight:500;">Số điện thoại:</h6>
-                                                                                <p> <?php echo $phonenumber ?></p>
-                                                                            </div>
-                                                                            <div class="col-md-12">
-                                                                                <h6 style="color:#ea5774;font-weight:500;">Ghi chú:</h6>
-                                                                                <p> <?php echo nl2br($ghichu) ?></p>
-                                                                            </div>
                                                                             <div class="table-responsive">
                                                                                 <table id="table-detail-<?php echo $hd_id ?>" class="table table-bordered table-striped table-hover">
                                                                                     <tr>
@@ -212,28 +197,33 @@ if (!isset($_SESSION['customer'])) {
                                                                                         }
                                                                                     }
                                                                                     ?>
-                                                                                    <tr>
-                                                                                        <th></th>
-                                                                                        <th></th>
-                                                                                        <th></th>
-                                                                                        <th style="color: #ea5774;">Tính tạm:</th>
-                                                                                        <th style="color: #ea5774;">$ <?php echo $total_price ?></th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th></th>
-                                                                                        <th></th>
-                                                                                        <th></th>
-                                                                                        <th style="color: #ea5774;">Phí ship:</th>
-                                                                                        <th style="color: #ea5774;">$ 5</th>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <th></th>
-                                                                                        <th></th>
-                                                                                        <th></th>
-                                                                                        <th style="color: #ea5774;">Tổng:</th>
-                                                                                        <th style="color: #ea5774;">$ <?php echo $total_price + 5 ?></th>
-                                                                                    </tr>
                                                                                 </table>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <h6 style="color:#ea5774;font-weight:500;">Đơn hàng: <?php echo $hd_id ?></h6>
+                                                                                <h6><?php echo $hd_name ?></h6>
+                                                                                <?php echo $phonenumber ?> <br>
+                                                                                <?php echo $email ?><br>
+                                                                                <span style="color: #ea5774;">Ghi Chú:</span> <br>
+                                                                                <?php echo nl2br($ghichu) ?>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="table-responsive">
+                                                                                    <table class="table table-bordered table-striped table-hover">
+                                                                                        <tr>
+                                                                                            <th>Tính tạm:</th>
+                                                                                            <th>$ <?php echo $total_price ?></th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>Phí ship:</th>
+                                                                                            <th>$ 5</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>Tổng:</th>
+                                                                                            <th style="color: #ea5774;">$ <?php echo $total_price + 5 ?></th>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>

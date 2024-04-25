@@ -165,20 +165,27 @@ if (isset($_GET['upstatus']) and isset($_SESSION['usernameadmin'])) {
                                                 <h6 style="color:#ea5774;font-weight:500;">Đơn hàng: <?php echo $hd_id ?></h6>
                                                 <h6><?php echo $hd_name ?></h6>
                                                 <?php echo $phonenumber ?> <br>
-                                                <?php echo $email ?>
+                                                <?php echo $email ?><br>
+                                                <span style="color: #ea5774;">Ghi Chú:</span> <br>
                                                 <?php echo nl2br($ghichu) ?>
                                             </div>
-                                            <div class="col-md-3">
-                                                <h6 style="font-weight:300;">Tính tạm:</h6>
-                                                <h6 style="font-weight:300;">Phí Ship:</h6>
-                                                <br>
-                                                <h5 style="font-weight:500;">Thành tiền:</h5>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <h6 style="font-weight:300;">$<?php echo $total_price ?></h6>
-                                                <h6 style="font-weight:300;">$5</h6>
-                                                <br>
-                                                <h5 style="font-weight:500;">$<?php echo $total_price + 5 ?></h5>
+                                            <div class="col-md-6">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped table-hover">
+                                                        <tr>
+                                                            <th>Tính tạm:</th>
+                                                            <th>$ <?php echo $total_price ?></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Phí ship:</th>
+                                                            <th>$ 5</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Tổng:</th>
+                                                            <th style="color: #ea5774;">$ <?php echo $total_price + 5 ?></th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
