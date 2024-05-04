@@ -273,7 +273,7 @@
                             </div>
                         </div>
 
-                        <!-- del order -->
+                        <!-- cancel order -->
                         <div class="modal fade" id="exampleModal<?php echo $hd_id ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
@@ -284,15 +284,15 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0052 4.45201C10.8464 2.83971 13.1536 2.83971 13.9948 4.45201L20.5203 16.9592C21.3019 18.4572 20.2151 20.25 18.5255 20.25H5.47447C3.78487 20.25 2.69811 18.4572 3.47966 16.9592L10.0052 4.45201ZM12.6649 5.14586C12.3845 4.60842 11.6154 4.60842 11.335 5.14586L4.80953 17.6531C4.54902 18.1524 4.91127 18.75 5.47447 18.75H18.5255C19.0887 18.75 19.4509 18.1524 19.1904 17.6531L12.6649 5.14586Z" fill="#FC820A"></path>
                                                 <path d="M12 17.25C12.6213 17.25 13.125 16.7463 13.125 16.125C13.125 15.5037 12.6213 15 12 15C11.3787 15 10.875 15.5037 10.875 16.125C10.875 16.7463 11.3787 17.25 12 17.25Z" fill="#FC820A"></path>
                                             </svg>
-                                            Xóa đơn hàng
+                                            Hủy đơn hàng
                                         </h3>
                                     </div>
                                     <div class="modal-body" style="margin: auto;">
-                                        <h6 style="font-family: Roboto,Helvetica,Arial,sans-serif; font-size:16px;">Bạn có chắc muốn xóa đơn hàng này không?</h6>
+                                        <h6 style="font-family: Roboto,Helvetica,Arial,sans-serif; font-size:16px;">Bạn có chắc muốn Hủy đơn hàng này không?</h6>
                                     </div>
                                     <div class="modal-footer" style="margin: auto;">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
-                                        <a href="orders.php?del=<?php echo $hd_id ?>">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+                                        <a href="orders.php?cancel=<?php echo $hd_id ?>">
                                             <button type="button" class="btn btn-outline-danger">Xác nhận</button>
                                         </a>
                                     </div>

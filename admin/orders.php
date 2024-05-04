@@ -181,7 +181,7 @@ if (isset($_GET['cancel']) and isset($_SESSION['usernameadmin'])) {
                             </div>
                         </div>
 
-                        <!-- del order -->
+                        <!-- cancel order -->
                         <div class="modal fade" id="exampleModal<?php echo $hd_id ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
@@ -199,7 +199,7 @@ if (isset($_GET['cancel']) and isset($_SESSION['usernameadmin'])) {
                                         <h6 style="font-family: Roboto,Helvetica,Arial,sans-serif; font-size:16px;">Bạn có chắc muốn hủy đơn hàng này không?</h6>
                                     </div>
                                     <div class="modal-footer" style="margin: auto;">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
                                         <a href="orders.php?cancel=<?php echo $hd_id ?>">
                                             <button type="button" class="btn btn-outline-danger">Xác nhận</button>
                                         </a>

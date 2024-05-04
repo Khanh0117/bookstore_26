@@ -108,6 +108,15 @@ $runshop = $conn->query($queryshop);
         width: 50%;
         text-align: center;
     }
+
+    .breakline{
+        display: -webkit-box;
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 2; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+    }
+
 </style>
 
 </head>
@@ -305,7 +314,7 @@ $runshop = $conn->query($queryshop);
                                                     </div>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h4><a href="product.php?id=<?php echo $idsp ?>"><?php echo $tensp ?></a></h4>
+                                                    <h4><a class="breakline" href="product.php?id=<?php echo $idsp ?>"><?php echo $tensp ?></a></h4>
                                                     <div class="pricebox">
                                                         <p style="text-decoration: line-through;">$<?php echo $giasp ?></p>
                                                         <span class="regular-price">$<?php echo $giamoi ?></span>
