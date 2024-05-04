@@ -120,12 +120,17 @@ if (!isset($_SESSION['customer'])) {
                                                                             }
                                                                             if ($hd_status == '2') {
                                                                             ?>
-                                                                                <span class="btn btn-danger">Đã xác nhận</span>
+                                                                                <span class="btn btn-warning">Đã xác nhận</span>
                                                                             <?php
                                                                             }
                                                                             if ($hd_status == '3') {
                                                                             ?>
                                                                                 <span class="btn btn-success">Đã nhận hàng</span>
+                                                                            <?php
+                                                                            }
+                                                                            if ($hd_status == '4') {
+                                                                            ?>
+                                                                                <span class="btn btn-danger">Đã hủy</span>
                                                                             <?php
                                                                             }
                                                                             ?>

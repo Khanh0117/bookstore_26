@@ -21,13 +21,14 @@ $start = ($pages - 1) * $limit;
 $query = "SELECT * FROM taikhoan tk 
 LEFT JOIN `role` r ON tk.Idrole = r.Idrole 
 LEFT JOIN users u ON u.Idtk = tk.Idtk
-WHERE CONCAT(tk.Idtk,Ten,Mail,Sdt,Diachi,Username,Rolename) LIKE'%$searchkey%' 
+WHERE CONCAT(tk.Idtk,Ten,Mail,Sdt,Diachi,Username,Rolename) LIKE'%$searchkey%'
 ORDER BY tk.Idtk asc
 LIMIT $start, $limit";
 
 $querypage = "SELECT * FROM taikhoan tk 
 LEFT JOIN `role` r ON tk.Idrole = r.Idrole 
 LEFT JOIN users u ON u.Idtk = tk.Idtk
+WHERE CONCAT(tk.Idtk,Ten,Mail,Sdt,Diachi,Username,Rolename) LIKE'%$searchkey%'
 ORDER BY tk.Idtk asc;";
 
 $run_page = $conn->query($querypage);

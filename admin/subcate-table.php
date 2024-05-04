@@ -25,6 +25,7 @@ order by Idpl asc
 LIMIT $start, $limit";
 
 $querypage = "SELECT * FROM phanloai 
+where CONCAT(Idpl,Tenphanloai) LIKE '%$searchkey%' 
 order by Idpl asc";
 
 $run_page = $conn->query($querypage);

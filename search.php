@@ -27,14 +27,14 @@ $min_price = 0;
 $queryshop = "SELECT * from sanpham sp
 LEFT JOIN theloai tl on tl.Idloai = sp.Idloai
 LEFT JOIN nhaphathanh nph on nph.Idnph = sp.Idnph 
-where StatusSP = 1 and CONCAT(Idsp,Tensp,Tacgia,Minhhoa,Dichgia,Tennph,Tenloai,Giasp,Giamgia,Giamoi,Loaibia,Sotrang) LIKE '%$searchkey%'
+where StatusSP = 1 and Tensp LIKE '%$searchkey%'
 order by sp.Tensp asc
 LIMIT $start, $limit";
 
 $querypage = "SELECT * from sanpham sp
 LEFT JOIN theloai tl on tl.Idloai = sp.Idloai
 LEFT JOIN nhaphathanh nph on nph.Idnph = sp.Idnph
-where StatusSP = 1 and CONCAT(Idsp,Tensp,Tacgia,Minhhoa,Dichgia,Tennph,Tenloai,Giasp,Giamgia,Giamoi,Loaibia,Sotrang) LIKE '%$searchkey%'
+where StatusSP = 1 and Tensp LIKE '%$searchkey%'
 order by sp.Tensp asc";
 
 $cur_page = '';

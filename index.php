@@ -40,77 +40,11 @@
         <!-- header area end -->
 
         <!-- hero slider start -->
-        <div class="hero-slider-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="slider-wrapper-area2 mt-30">
-                            <div class="hero-slider-active hero__2 slick-dot-style hero-dot">
-                                <div class="single-slider d-flex align-items-center" style="background-image: url(assets/img/slider/slider_ln.jpeg);">
-                                    <div class="container">
-                                        <div class="slider-main-content">
-                                            <div class="slider-text text-center">
-                                                <h2>Nhiều loại sách mới</h2>
-                                                <h3>Nhận ưu đãi lên đến 50%</h3>
-                                                <p>Hãy nhanh tay và chốt deal ngay nào! </p>
-                                                <a class="home-btn" href="shop.php">Xem thêm</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-slider d-flex align-items-center" style="background-image: url(assets/img/slider/slider_ln5.jpg);">
-                                    <div class="container">
-                                        <div class="slider-main-content">
-                                            <div class="slider-text text-center">
-                                                <h2>Nhiều loại sách mới</h2>
-                                                <h3>Nhận ưu đãi lên đến 50%</h3>
-                                                <p>Hãy nhanh tay và chốt deal ngay nào!</p>
-                                                <a class="home-btn" href="shop.php">Xem thêm</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include_once('hero-slider.php') ?>
         <!-- hero slider end -->
 
         <!-- home banner area start -->
-        <div class="banner-area mt-30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 order-1">
-                        <div class="img-container fix img-full imgs-res mb-sm-30">
-                            <a href="#">
-                                <img src="assets/img/banner/banner_ln_left.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-5 order-sm-3">
-                        <div class="img-container fix img-full mb-30">
-                            <a href="#">
-                                <img src="assets/img/banner/banner_ln1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="img-container fix img-full mb-30">
-                            <a href="#">
-                                <img src="assets/img/banner/banner_ln2.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 order-2 order-md-3">
-                        <div class="img-container fix img-full ">
-                            <a href="#">
-                                <img src="assets/img/banner/banner_ln_left2.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include_once('banner-area.php') ?>
         <!-- home banner area end -->
 
         <!-- page wrapper start -->
@@ -196,13 +130,7 @@
                             <!-- sales area end -->
 
                             <!-- banner statistic start -->
-                            <div class="banner-statistic pt-28 pb-36">
-                                <div class="img-container fix img-full">
-                                    <a href="#">
-                                        <img src="assets/img/banner/banner_ln3.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
+                            <?php include_once('banner-stastic-1.php') ?>
                             <!-- banner statistic end -->
 
                             <!-- featured category area start -->
@@ -282,24 +210,7 @@
                             <!-- featured category area end -->
 
                             <!-- banner statistic start -->
-                            <div class="banner-statistic pt-28 pb-30 pb-sm-0">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="img-container fix img-full mb-sm-30">
-                                            <a href="#">
-                                                <img src="assets/img/banner/banner_ln4.jpg" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="img-container fix img-full mb-sm-30">
-                                            <a href="#">
-                                                <img src="assets/img/banner/banner_ln5.jpg" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php include_once('banner-stastic-2.php') ?>
                             <!-- banner statistic end -->
 
                             <!-- category features area start -->
@@ -584,116 +495,7 @@
             <!-- latest product end -->
 
             <!-- latest blog area start -->
-            <div class="latest-blog-area pt-28">
-                <div class="container">
-                    <div class="section-title mb-30">
-                        <div class="title-icon">
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <h3>latest news</h3>
-                    </div> <!-- section title end -->
-                    <!-- blog wrapper start -->
-                    <div class="blog-carousel-active2 slick-padding slick-arrow-style">
-                        <div class="blog-item">
-                            <div class="blog-thumb img-full fix">
-                                <a href="blog.php">
-                                    <img src="assets/img/blog/img_blog1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <h3><a href="blog-details.html">post format audio</a></h3>
-                                <div class="blog-meta">
-                                    <span class="posted-author">by: admin</span>
-                                    <span class="post-date">25 Nov, 2018</span>
-                                </div>
-                                <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa posuere ac. Quisque dapibus, est ac...</p>
-                            </div>
-                            <a href="blog.php">read more <i class="fa fa-long-arrow-right"></i></a>
-                        </div> <!-- end single blog item -->
-                        <div class="blog-item">
-                            <div class="blog-thumb img-full fix">
-                                <a href="blog.php">
-                                    <img src="assets/img/blog/img_blog2.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <h3><a href="blog.php">post format image</a></h3>
-                                <div class="blog-meta">
-                                    <span class="posted-author">by: admin</span>
-                                    <span class="post-date">25 Nov, 2018</span>
-                                </div>
-                                <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa posuere ac. Quisque dapibus, est ac...</p>
-                            </div>
-                            <a href="blog.php">read more <i class="fa fa-long-arrow-right"></i></a>
-                        </div> <!-- end single blog item -->
-                        <div class="blog-item">
-                            <div class="blog-thumb img-full fix">
-                                <a href="blog.php">
-                                    <img src="assets/img/blog/img_blog3.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <h3><a href="blog.php">post format audio</a></h3>
-                                <div class="blog-meta">
-                                    <span class="posted-author">by: admin</span>
-                                    <span class="post-date">25 Nov, 2018</span>
-                                </div>
-                                <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa posuere ac. Quisque dapibus, est ac...</p>
-                            </div>
-                            <a href="blog.php">read more <i class="fa fa-long-arrow-right"></i></a>
-                        </div> <!-- end single blog item -->
-                        <div class="blog-item">
-                            <div class="blog-thumb img-full fix">
-                                <a href="blog.php">
-                                    <img src="assets/img/blog/img_blog4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <h3><a href="blog.php">post format image</a></h3>
-                                <div class="blog-meta">
-                                    <span class="posted-author">by: admin</span>
-                                    <span class="post-date">25 Nov, 2018</span>
-                                </div>
-                                <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa posuere ac. Quisque dapibus, est ac...</p>
-                            </div>
-                            <a href="blog.php">read more <i class="fa fa-long-arrow-right"></i></a>
-                        </div> <!-- end single blog item -->
-                        <div class="blog-item">
-                            <div class="blog-thumb img-full fix">
-                                <a href="blog.php">
-                                    <img src="assets/img/blog/img_blog3.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <h3><a href="blog.php">post format audio</a></h3>
-                                <div class="blog-meta">
-                                    <span class="posted-author">by: admin</span>
-                                    <span class="post-date">25 Nov, 2018</span>
-                                </div>
-                                <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa posuere ac. Quisque dapibus, est ac...</p>
-                            </div>
-                            <a href="blog.php">read more <i class="fa fa-long-arrow-right"></i></a>
-                        </div> <!-- end single blog item -->
-                        <div class="blog-item">
-                            <div class="blog-thumb img-full fix">
-                                <a href="blog-details.html">
-                                    <img src="assets/img/blog/img_blog2.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <h3><a href="blog.php">post format image</a></h3>
-                                <div class="blog-meta">
-                                    <span class="posted-author">by: admin</span>
-                                    <span class="post-date">25 Nov, 2018</span>
-                                </div>
-                                <p>Curabitur sed diam enim. Sed varius faucibus lectus, a scelerisque massa posuere ac. Quisque dapibus, est ac...</p>
-                            </div>
-                            <a href="blog.php">read more <i class="fa fa-long-arrow-right"></i></a>
-                        </div> <!-- end single blog item -->
-                    </div>
-                    <!-- blog wrapper end -->
-                </div>
-            </div>
+            <?php require_once('latest-blog.php') ?>
             <!-- latest blog area end -->
 
             <!-- brand area start -->

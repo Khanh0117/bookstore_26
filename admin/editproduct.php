@@ -162,15 +162,20 @@
                                                 <?php
                                                 if ($pro_image != "") {
                                                 ?>
-                                                    <div name="old" value="<?php $pro_image ?>" style="margin-bottom: 15px;"><img src="product-img/<?php echo $pro_image ?>" width="300px"></div>
+                                                    <div name="old" value="<?php $pro_image ?>" style="margin-bottom: 15px;"><img id="thumb" src="product-img/<?php echo $pro_image ?>" width="300px"></div>
                                                 <?php
                                                 } else {
                                                     echo "Không tìm thấy ảnh sách";
                                                 }
                                                 ?>
                                                 <label>Nếu bạn muốn đổi ảnh sách, thì hãy click vào đây:</label>
-                                                <input type="file" class="form-control" name="image" value="./product-img/<?php echo $pro_image; ?>">
+                                                <input type="file" class="form-control" name="image" onchange="preview()" value="./product-img/<?php echo $pro_image; ?>">
                                             </div>
+                                            <script>
+                                                function preview() {
+                                                    thumb.src = URL.createObjectURL(event.target.files[0]);
+                                                }
+                                            </script>
                                             <div class="form-group">
                                                 <input type="submit" value="Sửa sách" name="edit-product" class="btn btn-primary">
                                             </div>

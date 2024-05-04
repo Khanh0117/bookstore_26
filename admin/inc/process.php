@@ -268,7 +268,7 @@ if (isset($_POST['add-product'])) {
 if (isset($_GET['hd_upstatus']) and isset($_SESSION['usernameadmin'])) {
 	$upstatus = $_GET['hd_upstatus'];
 	$status = $_GET['hd_status'];
-	$status_new = $status + 1;
+	$status_new = $status;
 	$upstatus_query = "UPDATE hoadon SET StatusHD = '$status_new' WHERE Idhd = '$upstatus'";
 	if ($status_new == '3') {
 		$finish_date = date("Y-m-d");

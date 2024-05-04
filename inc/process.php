@@ -199,7 +199,7 @@ if (isset($_POST['checkout_bank'])) {
 
 	if ($bank_payment == 'COD') {
 		$bank_note .= '\nThanh toán COD';
-		$querynew = "INSERT INTO `hoadon` (`Idhd`, `Ngaymua`, `Ngaynhan`, `Idtk`, `Ghichu`, `StatusHD`) VALUES (NULL, '$buydate', '$buydate', '$cus_id', '$bank_note', '1');";
+		$querynew = "INSERT INTO `hoadon` (`Idhd`, `Ngaymua`, `Ngaynhan`, `Idtk`, `Ghichu`, `StatusHD`) VALUES (NULL, '$buydate', NULL, '$cus_id', '$bank_note', '1');";
 
 		$run_neworder = $conn->query($querynew);
 

@@ -128,9 +128,14 @@
 
                                     <div class="form-group">
                                         <label for="products">Image:*</label>
-                                        <input type="file" class="form-control" name="image" required>
+                                        <input type="file" class="form-control" name="image" onchange="preview()" required>
+                                        <img id="thumb" src="" width="300px"/>
                                     </div>
-
+                                    <script>
+                                        function preview(){
+                                            thumb.src=URL.createObjectURL(event.target.files[0]);
+                                        }
+                                    </script>
                                     <div class="form-group">
                                         <input type="submit" value="Thêm sách" name="add-product" class="btn btn-primary">
                                     </div>
